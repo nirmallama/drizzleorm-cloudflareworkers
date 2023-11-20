@@ -1,0 +1,26 @@
+{
+  "name": "drizzle-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "generate": "drizzle-kit generate:pg",
+    "migrate": "tsx migrate.ts"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230419.0",
+    "dotenv": "^16.3.1",
+    "drizzle-kit": "^0.20.4",
+    "postgres": "^3.4.3",
+    "tsx": "^4.1.4",
+    "typescript": "^5.0.4",
+    "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.6.0",
+    "drizzle-orm": "^0.29.0",
+    "hono": "^3.10.1"
+  }
+}
